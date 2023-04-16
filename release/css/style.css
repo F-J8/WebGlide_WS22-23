@@ -1,0 +1,86 @@
+html,
+body {
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background: transparent;
+}
+#cesiumContainer {
+  height: 100%;
+}
+.cesium-credit-textContainer,.cesium-credit-logoContainer,.cesium-credit-expand-link{ 
+  display:none!important; 
+  visibility:hide!important; 
+  }
+
+select{
+  font-weight: bold;
+}
+
+option { 
+  font-weight: bold;
+}
+
+.ui-elements{
+  font-weight: bold;
+  z-index: 1;
+}
+
+label{
+  display: block;
+  font-weight: bold;
+  text-align: center;
+}
+
+input[type=checkbox] {
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+}
+
+#checkDiv {
+  position: absolute;
+    top: 50px;
+    right: 5px;
+    width: 95px;
+    height: 20px;
+    padding: 5px;
+    border: 0px;
+    
+}
+
+body{
+  background-color:black;
+}
+
+#inputPicker{
+  position: absolute;
+    top: 90px;
+    right: 5px;
+    width: 105px;
+    height: 30px;
+    border-radius:5px;
+}
+
+#shaders{
+  position: absolute;
+    top: 130px;
+    right: 5px;
+    width: 105px;
+    height: 30px;
+}
+
+#img{
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  left: 33%;
+  width: 33%;
+  transition: 2s ease;
+  opacity:0;
+  color: white;
+  
+  padding: 20px;
+  z-index: 5;
+}

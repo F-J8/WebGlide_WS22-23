@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <title>WebGlide</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico?">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- CESIUM -->
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.101/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.101/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+
+  <!-- HUEBEE -->
+  <link rel="stylesheet" href="css/huebee.min.css">
+  <script type="text/javascript" src="js/huebee.min.js"></script>
+  
+</head>
+<body>
+  <!-- IGC LOAD -->
+  <input type="file" id="fileInput" accept=".igc" hidden>
+  <label for="fileInput" id="inputButton">igc</label>
+
+  <!-- SHADOWS -->
+  <div id="checkDiv" class="ui-elements">
+    <label id="shadowCheckboxLabel">
+      <input type="checkbox" id="shadowCheckboxId" checked="false">
+      shadows
+    </label>
+  </div>
+
+  <!-- COLORPICKER -->
+  <button class="color-input ui-elements" id="inputPicker">Farbe</button>
+
+  <!-- STYLES -->
+  <select id="shaders" name="shaders" class="ui-elements">
+    <option value="s1" selected>Stil 1</option>
+    <option value="s2">Stil 2</option>
+    <option value="s3">Stil 3</option>
+    <option value="s4">Stil 4</option>
+  </select>
+
+  <img id=img src="images/logo.png">
+  
+  <!-- CESIUM CONTAINER -->
+  <!-- The Element with the ID 'cesiumCoontainer' will be used as the container for the app -->
+  <div id="cesiumContainer"></div>
+ 
+  <script type="module" src="js/index.js"></script>
+
+</body>
+</html>
